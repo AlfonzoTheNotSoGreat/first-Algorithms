@@ -1,0 +1,31 @@
+Console.WriteLine("Welcome to Collatz Conjecture please enter any positive number");
+double num = Convert.ToDouble(Console.ReadLine());
+double divide = num;
+bool pass = false;
+
+while (pass == false)
+{
+    divide = divide % 2;
+
+    if (divide == 0)
+    {
+        num /= 2;
+        divide = num;
+    }
+    else
+    {
+        num *= 3;
+        num += 1;
+        divide = num;
+    }
+    Console.WriteLine(num);
+
+    if (num == 1) 
+    { 
+    pass = true;
+    }
+
+}
+
+
+Console.ReadKey();
