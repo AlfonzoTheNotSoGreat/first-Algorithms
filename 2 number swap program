@@ -1,0 +1,13 @@
+Console.WriteLine("Welcome to number swapper");
+Console.WriteLine("Please write number one");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please write the second number");
+int num2 = Convert.ToInt32(Console.ReadLine());
+int TEMP = 0;
+
+TEMP = num1;
+num1 = num2;
+num2 = TEMP;
+Console.WriteLine("Number one is " + num1 + " and number two is " + num2);
+
+Console.ReadKey();
