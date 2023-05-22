@@ -1,0 +1,26 @@
+
+int[] numbers = { 2, 4 ,5 ,1, 7, -7, 8, 1 } ;
+
+BubbleSort(numbers);
+
+Console.WriteLine(numbers[0] +" "+ numbers[1] +" "+ numbers[2] +" "+ numbers[3] +" "+ numbers[4] +" "+ numbers[5] +" "+ numbers[6] +" "+ numbers[7]);
+
+static void BubbleSort(int[] numbers) 
+{
+    int temp;
+    for (int i = 0; i < numbers.Length - 1; i++)
+    {
+        for (int j = 0; j < numbers.Length - (1 +i); j++) 
+        { 
+        if (numbers[j] > numbers[j + 1])
+            {
+                temp = numbers[j + 1];
+                numbers[j + 1] = numbers[j];
+                numbers[j] = temp;
+            }
+        }
+    }
+
+}
+
+Console.ReadKey();
