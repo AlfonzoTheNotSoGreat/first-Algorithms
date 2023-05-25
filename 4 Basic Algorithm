@@ -1,0 +1,23 @@
+using System.Xml.Schema;
+//a C# Sharp program that computes the sum of two numerical values. If the two values are the same, it triples their sum.
+
+Console.WriteLine("this program computes the sum of two numerical values. If the two values are the same, it will return triple their sum");
+
+Console.WriteLine("Enter a number");
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter a second number");
+int num2  = Convert.ToInt32(Console.ReadLine());
+
+if  (num1 == num2)
+{
+    num1 += num2;
+    num1 *= 3;
+}
+else
+{
+    num1 += num2;
+}
+Console.WriteLine("The answer is " + num1);
+
+Console.ReadKey();
