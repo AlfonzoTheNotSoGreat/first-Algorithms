@@ -1,0 +1,16 @@
+// A C# Sharp program to get the absolute difference between n and 51. If n is broader than 51 return triple the absolute difference.
+
+Console.WriteLine("Please enter a number");
+int n = Convert.ToInt32(Console.ReadLine());
+
+if  (n <= 51)
+{
+    n = 51 - n;
+    Console.WriteLine(n);
+}
+else if(n > 51)
+{
+    n -= 51;
+    n *= 3;
+    Console.WriteLine(n);
+}
