@@ -1,0 +1,26 @@
+// Write a C# Sharp program to check whether three given integer values are in the range 20..50 inclusive. Return true if 1 of them are in the said range otherwise false.
+int count = 0;
+Console.WriteLine("Please enter a number");
+int one = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please enter a second number");
+int two = Convert.ToInt32(Console.ReadLine());
+  
+
+if( one >= 20 && one <= 50)
+{
+    count++;
+}
+if (two >= 20 && two <= 50)
+{
+    count++;
+}
+if (count == 1)
+{
+    Console.WriteLine(true);
+}
+else
+{
+    Console.WriteLine(false);
+}
+
+Console.ReadKey();
