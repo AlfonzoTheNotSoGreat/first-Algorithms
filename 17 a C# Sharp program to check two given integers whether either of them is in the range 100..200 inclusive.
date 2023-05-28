@@ -1,0 +1,27 @@
+//Write a C# Sharp program to check two given integers whether either of them is in the range 100..200 inclusive.
+int count = 0;
+
+Console.WriteLine("Please enter one number");
+int num1 = Convert.ToInt32(Console.ReadLine());
+if (num1 >= 100 && num1 <= 200)
+{
+    count++;
+}
+
+Console.WriteLine("Please enter a second number");
+int num2 = Convert.ToInt32(Console.ReadLine());
+if (num2 >= 100 && num2 <= 200)
+{
+    count++;
+}
+
+if(count >= 1)
+{
+    Console.WriteLine(true);
+}
+else
+{
+    Console.WriteLine(false);
+}
+
+Console.ReadKey();
