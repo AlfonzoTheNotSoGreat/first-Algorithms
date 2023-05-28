@@ -1,0 +1,18 @@
+//Write a C# Sharp program to check if a given string starts with 'C#' or not.
+
+Console.WriteLine("Please enter a sentence");
+string input = Console.ReadLine();
+string subInput = input.Substring(0,2);
+subInput = subInput.ToUpper();
+
+if(subInput == "C#")
+{
+    Console.WriteLine(true);
+}
+else 
+{
+    Console.WriteLine(false);
+}
+
+
+Console.ReadKey();
