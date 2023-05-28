@@ -1,0 +1,8 @@
+//Write a C# Sharp program to create a string with the last char added at the front and back of a given string of length 1 or more.
+
+Console.WriteLine("Please enter a sentence");
+string input = Console.ReadLine();
+char one = input[input.Length - 1];
+Console.WriteLine(one + input + one);
+
+Console.ReadKey();
