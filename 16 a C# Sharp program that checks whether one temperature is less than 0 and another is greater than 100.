@@ -1,0 +1,29 @@
+//Write a C# Sharp program that checks whether one temperature is less than 0 and another is greater than 100.
+
+int count = 0;
+
+Console.WriteLine("Please enter one temperature");
+int tempOne = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Please enter a second temperature");
+int tempTwo = Convert.ToInt32(Console.ReadLine());
+
+if (tempOne < 0 || tempOne > 100)
+{
+    count++;
+}
+if (tempTwo < 00 || tempTwo > 100)
+{
+    count++;
+}
+
+if (count == 2)
+{
+    Console.WriteLine(true);
+}
+else
+{
+     Console.WriteLine(false);
+}
+
+Console.ReadKey();
