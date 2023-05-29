@@ -1,0 +1,19 @@
+//Write a C# Sharp program to find the largest value from two positive integer values in the range 20..30 inclusive. Return 0 if neither is in that range.
+Console.WriteLine("Please enter a number");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please enter a second number");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+if ((num1 < 20 || num1 > 30) && (num2 < 20 || num2 > 30))
+{
+    Console.WriteLine("Both numbers are out of the 20 to 30 range");
+}
+else if ((num1 >= 20 || num1 <= 30) && (num2 >= 20 || num2 <= 30))
+{
+    if (num1 >= num2)
+    { Console.WriteLine(num1);}
+    else if (num2 >= num1)
+    { Console.WriteLine(num2);}
+}
+
+    Console.ReadKey();
