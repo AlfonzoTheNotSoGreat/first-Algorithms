@@ -1,0 +1,31 @@
+//Write a C# Sharp program to check whether two given integers are in the range 40..50 inclusive
+
+Console.WriteLine("Please enter a number");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please enter a second number");
+int num2 = Convert.ToInt32(Console.ReadLine());
+int count = 0;
+
+if (num1 >= 40 && num1 <=50)
+{
+    count++;
+}
+if (num2 >= 40 && num2 <= 50)
+{
+    count++;
+}
+
+switch(count)
+{
+    case 0:
+        Console.WriteLine("no numbers are in the range of 40 and 50");
+        break;
+    case 1:
+        Console.WriteLine("only one number is in the range of 40 and 50");
+        break;
+    case 2:
+        Console.WriteLine("Both numbers are in the range of 40 and 50");
+        break;
+}
+
+Console.ReadKey();
