@@ -1,0 +1,27 @@
+//Write a C# Sharp program to check the largest number among three given integers.
+
+int[] num = { 0, 0 ,0 };
+
+Console.WriteLine("Please enter a number");
+num[0] = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please enter a second number");
+num[1] = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Please enter a third number");
+num[2] = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 0; i < num.Length - 1; i++)
+{
+    int temp;
+    for (int j = 0; j < num.Length - (1 + i); j++)
+    {
+        if (num[j] >= num[j + 1])
+        {
+            temp = num[j];
+            num[j] = num[j + 1];
+            num[j + 1] = temp;
+        }
+    }
+}
+Console.WriteLine(num[2]);
+
+Console.ReadKey();
