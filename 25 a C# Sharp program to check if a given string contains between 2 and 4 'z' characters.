@@ -1,5 +1,5 @@
 //Write a C# Sharp program to check if a given string contains between 2 and 4 'z' characters.
-Console.WriteLine("Please enter a work");
+Console.WriteLine("Please enter a word");
 string input = Console.ReadLine();
 input = input.ToLower();
 int count = 0;
