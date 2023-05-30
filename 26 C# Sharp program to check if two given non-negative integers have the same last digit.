@@ -1,0 +1,20 @@
+//Write a C# Sharp program to check if two given non-negative integers have the same last digit.
+Console.WriteLine("Please enter a number");
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Please enter a second number");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+char[] array = num1.ToString().ToCharArray();
+char[] array2 = num2.ToString().ToCharArray();
+
+if (array[array.Length - 1] == array2[array2.Length - 1])
+{
+    Console.WriteLine(true);
+}
+else 
+{ 
+    Console.WriteLine(false);
+}
+
+Console.ReadKey();
