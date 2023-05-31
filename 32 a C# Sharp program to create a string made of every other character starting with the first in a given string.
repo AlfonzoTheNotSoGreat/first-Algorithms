@@ -1,0 +1,11 @@
+//Write a C# Sharp program to create a string made of every other character starting with the first in a given string.
+Console.WriteLine("Please enter a sentence or word");
+string input = Console.ReadLine();
+char[] array = input.ToCharArray();
+
+for (int i = 0; i < input.Length; i+=2)
+{
+    Console.Write(array[i]);
+}
+
+Console.ReadKey();
