@@ -1,0 +1,17 @@
+//Write a C# Sharp program to check if a specified number is present in a given array of integers.
+Console.WriteLine("Please enter a number");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int[] nums = { 1, 2, 2, 3 };
+
+
+for (int i = 0; i < nums.Length; i++)
+{
+    if (nums[i] == num)
+    {
+        
+        Console.WriteLine(true);
+    }
+
+}
+Console.ReadKey();
