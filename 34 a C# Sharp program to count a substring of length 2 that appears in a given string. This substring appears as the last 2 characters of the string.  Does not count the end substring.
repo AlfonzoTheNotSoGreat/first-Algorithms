@@ -1,0 +1,21 @@
+//Write a C# Sharp program to count a substring of length 2 that appears in a given string.
+//This substring appears as the last 2 characters of the string. Do not count the end substring.
+Console.WriteLine("Please enter a sentence or word");
+string input = Console.ReadLine();
+
+string subString = input.Substring(input.Length - 2);
+int count = 0;
+
+for (int i = 0; i < input.Length - 2; i++)
+{
+    string subStringTwo = input.Substring(i, 2);
+
+    if (subStringTwo.Equals(subString))
+    {
+        count++;
+    }
+
+}
+Console.WriteLine(count);
+
+Console.ReadKey();
