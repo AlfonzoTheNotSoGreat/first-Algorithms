@@ -1,0 +1,29 @@
+// Write a C# Sharp program to create a string from a given string where a specified character is removed except for the beginning and ending positions.
+
+Console.WriteLine("Please enter a string");
+string input = Console.ReadLine();
+Console.WriteLine("Please enter the specified character you would like to remove");
+char character = Convert.ToChar(Console.ReadLine()); 
+
+for (int i = 0; i < input.Length - 1; i++)
+{
+    if (i == 0)
+    {
+
+    }
+    else if (i == input.Length - 1)
+    {
+
+    }
+    else 
+    {
+       if (character == input[i])
+       {
+            input = input.Remove(i, 1);
+       }
+    }
+}
+
+Console.WriteLine(input);
+
+Console.ReadKey();
