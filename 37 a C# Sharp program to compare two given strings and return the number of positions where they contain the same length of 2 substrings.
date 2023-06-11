@@ -1,0 +1,29 @@
+// Write a C# Sharp program to compare two given strings and return the number of positions where they contain the same length of 2 substrings.
+
+Console.WriteLine("Please enter a string");
+string input = Console.ReadLine();
+
+Console.WriteLine("Please enter a second string");
+string inputTwo = Console.ReadLine();
+
+int count = 0;
+
+for (int i = 0; i < input.Length - 1; i++)
+{
+    string inputSub = input.Substring(i, 2);
+    for (int j = 0; j < inputTwo.Length - 1; j++)
+    {
+        string inputSubTwo = inputTwo.Substring(j, 2);
+        if (inputSub.Equals(inputSubTwo))
+        {
+            count++;
+        }
+
+    }
+
+
+}
+
+Console.WriteLine(count);
+
+Console.ReadKey();
