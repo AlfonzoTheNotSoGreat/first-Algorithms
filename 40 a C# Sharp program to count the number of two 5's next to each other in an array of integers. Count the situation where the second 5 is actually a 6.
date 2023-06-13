@@ -1,0 +1,19 @@
+//Write a C# Sharp program to count the number of two 5's next to each other in an array of integers. Count the situation where the second 5 is actually a 6.
+int[] nums = { 5, 5, 2, 5, 5 };
+int count = 0;
+
+for (int i = 0; nums.Length -1 > i; i++) 
+{ 
+    if (nums[i] == 5 && nums[i +1] == 5)
+    {
+        count++;
+    }
+    else if(nums[i] == 5 && nums[i + 1] == 6)
+    {
+        count++;
+    }
+}
+
+Console.WriteLine(count);
+
+Console.ReadKey();
