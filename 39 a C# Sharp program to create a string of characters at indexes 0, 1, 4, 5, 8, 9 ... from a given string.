@@ -1,0 +1,54 @@
+//Write a C# Sharp program to create a string of characters at indexes 0, 1, 4, 5, 8, 9 ... from a given string.
+
+Console.WriteLine("Please enter a string");
+string input = Console.ReadLine();
+
+if (input.Length -1 >= 9)
+{
+    string inputOne = input.Substring(0, 1);
+    string inputTwo = input.Substring(1, 1);
+    string inputThree = input.Substring(4, 1);
+    string inputFour = input.Substring(5, 1);
+    string inputFive = input.Substring(8, 1);
+    string inputSix = input.Substring(9, 1);
+    Console.WriteLine(inputOne + inputTwo + inputThree + inputFour + inputFive + inputSix);
+}
+else if (input.Length -1 >= 8)
+{
+    string inputOne = input.Substring(0, 1);
+    string inputTwo = input.Substring(1, 1);
+    string inputThree = input.Substring(4, 1);
+    string inputFour = input.Substring(5, 1);
+    string inputFive = input.Substring(8, 1);
+    Console.WriteLine(inputOne + inputTwo + inputThree + inputFour + inputFive);
+}
+else if (input.Length - 1 >= 5)
+{
+    string inputOne = input.Substring(0, 1);
+    string inputTwo = input.Substring(1, 1);
+    string inputThree = input.Substring(4, 1);
+    string inputFour = input.Substring(5, 1);
+    Console.WriteLine(inputOne + inputTwo + inputThree + inputFour);
+}
+else if (input.Length - 1 >= 4)
+{
+    string inputOne = input.Substring(0, 1);
+    string inputTwo = input.Substring(1, 1);
+    string inputThree = input.Substring(4, 1);
+    Console.WriteLine(inputOne + inputTwo + inputThree);
+}
+else if (input.Length - 1 >= 1)
+{
+    string inputOne = input.Substring(0, 1);
+    string inputTwo = input.Substring(1, 1);
+    Console.WriteLine(inputOne + inputTwo);
+}
+else if(input.Length - 1 >=0)
+{
+    string inputOne = input.Substring(0, 1);
+    Console.WriteLine(inputOne);
+}
+
+Console.WriteLine(input);
+
+Console.ReadKey();
